@@ -273,6 +273,42 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight') navigateLightbox(1);
 });
 
+// ===== Testimonials Slider =====
+let currentTestimonial = 0;
+const track = document.getElementById('testimonialsTrack');
+const cards = track ? track.querySelectorAll('.testimonial-card') : [];
+const dotsContainer = document.getElementById('testimonialDots');
+
+// Create dots
+if (dotsContainer && cards.length) {
+    cards.forEach((_, i) => {
+        const dot = document.createElement('div');
+        dot.classList.add('testimonial-dot');
+        if (i === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => goToTestimonial(i));
+        dotsContainer.appendChild(dot);
+    });
+}
+
+function goToTestimonial(index) {
+    currentTestimonial = index;
+    if (track) track.style.transform = `translateX(-${index * 100}%)`;
+    const dots = dotsContainer ? dotsContainer.querySelectorAll('.testimonial-dot') : [];
+    dots.forEach((d, i) => d.classList.toggle('active', i === index));
+}
+
+function slideTestimonial(dir) {
+    let next = currentTestimonial + dir;
+    if (next < 0) next = cards.length - 1;
+    if (next >= cards.length) next = 0;
+    goToTestimonial(next);
+}
+
+// Auto-slide every 6 seconds
+if (cards.length > 1) {
+    setInterval(() => slideTestimonial(1), 6000);
+}
+
 // ===== Contact Form =====
 document.getElementById('contactForm').addEventListener('submit', (e) => {
     e.preventDefault();
