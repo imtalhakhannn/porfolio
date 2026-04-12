@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"c:/Users/HP#/Pictures/Screenshots/Screenshot 2026-04-12 103635.png\" \"C:/Projects/PERSONAL-PORTFOLIO/assets/projects/hseq-dashboard.png\")",
+      "Bash(cp \"c:/Users/HP#/Pictures/Screenshots/Screenshot 2026-04-12 103650.png\" \"C:/Projects/PERSONAL-PORTFOLIO/assets/projects/hseq-analytics.png\")",
+      "Bash(cp \"c:/Users/HP#/Pictures/Screenshots/Screenshot 2026-04-12 103711.png\" \"C:/Projects/PERSONAL-PORTFOLIO/assets/projects/hseq-tasks.png\")",
+      "Bash(cp \"c:/Users/HP#/Pictures/Screenshots/Screenshot 2026-04-12 103807.png\" \"C:/Projects/PERSONAL-PORTFOLIO/assets/projects/hseq-compliance.png\")",
+      "Bash(cp \"c:/Users/HP#/Pictures/Screenshots/Screenshot 2026-04-12 103945.png\" \"C:/Projects/PERSONAL-PORTFOLIO/assets/projects/supportx-dashboard.png\")",
+      "Bash(start:*)",
+      "Bash(cp \"c:/Users/HP#/Downloads/image \\(20\\).jpg\" \"C:/Projects/PERSONAL-PORTFOLIO/assets/projects/netsmapx-dashboard.jpg\")",
+      "Bash(cp \"c:/Users/HP#/Downloads/image \\(19\\).jpg\" \"C:/Projects/PERSONAL-PORTFOLIO/assets/projects/netsmapx-scope.jpg\")",
+      "Bash(cp \"c:/Users/HP#/Downloads/Asset 42@288x-8 1.png\" \"C:/Projects/PERSONAL-PORTFOLIO/assets/projects/netsmapx-blockage-form.png\")",
+      "Bash(cp \"c:/Users/HP#/Downloads/Screen1 1.png\" \"C:/Projects/PERSONAL-PORTFOLIO/assets/projects/netsmapx-history.png\")",
+      "Bash(cp \"c:/Users/HP#/Downloads/Screen 2 2.png\" \"C:/Projects/PERSONAL-PORTFOLIO/assets/projects/netsmapx-satellite.png\")",
+      "Bash(cp \"c:/Users/HP#/Downloads/Asset 44@288x-8 1.png\" \"C:/Projects/PERSONAL-PORTFOLIO/assets/projects/netsmapx-gis-menu.png\")",
+      "Bash(cp \"c:/Users/HP#/Downloads/Asset 43@288x-8 1.png\" \"C:/Projects/PERSONAL-PORTFOLIO/assets/projects/netsmapx-web-dashboard.png\")",
+      "Bash(ls:*)",
+      "Bash(git --version)",
+      "Bash(gh --version)",
+      "Bash(git config:*)"
+    ]
+  }
+}

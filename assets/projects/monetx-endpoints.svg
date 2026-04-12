@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600">
+  <defs>
+    <clipPath id="roundClip"><rect width="960" height="600" rx="8"/></clipPath>
+    <style>
+      text { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+    </style>
+  </defs>
+  <g clip-path="url(#roundClip)">
+    <!-- Background -->
+    <rect width="960" height="600" fill="#1E293B"/>
+
+    <!-- Sidebar -->
+    <rect width="220" height="600" fill="#0F172A"/>
+    <!-- Logo area -->
+    <rect x="20" y="18" width="36" height="36" rx="8" fill="#3B82F6"/>
+    <text x="38" y="42" fill="#fff" font-size="16" font-weight="700" text-anchor="middle">M</text>
+    <text x="68" y="42" fill="#F1F5F9" font-size="17" font-weight="700">MonetX</text>
+    <line x1="16" y1="68" x2="204" y2="68" stroke="#334155" stroke-width="1"/>
+
+    <!-- Nav Items -->
+    <!-- Dashboard -->
+    <g opacity="0.55">
+      <rect x="12" y="82" width="196" height="40" rx="6" fill="transparent"/>
+      <rect x="28" y="93" width="18" height="18" rx="4" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+      <rect x="31" y="96" width="5" height="5" rx="1" fill="#94A3B8"/>
+      <rect x="38" y="96" width="5" height="5" rx="1" fill="#94A3B8"/>
+      <rect x="31" y="103" width="5" height="5" rx="1" fill="#94A3B8"/>
+      <rect x="38" y="103" width="5" height="5" rx="1" fill="#94A3B8"/>
+      <text x="56" y="107" fill="#94A3B8" font-size="13.5" font-weight="500">Dashboard</text>
+    </g>
+    <!-- Endpoints (active) -->
+    <g>
+      <rect x="12" y="126" width="196" height="40" rx="6" fill="#1E293B"/>
+      <rect x="28" y="137" width="18" height="18" rx="4" fill="none" stroke="#3B82F6" stroke-width="1.5"/>
+      <circle cx="37" cy="146" r="5" fill="none" stroke="#3B82F6" stroke-width="1.5"/>
+      <circle cx="37" cy="146" r="2" fill="#3B82F6"/>
+      <text x="56" y="151" fill="#3B82F6" font-size="13.5" font-weight="600">Endpoints</text>
+      <rect x="8" y="130" width="3" height="32" rx="1.5" fill="#3B82F6"/>
+    </g>
+    <!-- Patches -->
+    <g opacity="0.55">
+      <rect x="12" y="170" width="196" height="40" rx="6" fill="transparent"/>
+      <rect x="28" y="181" width="18" height="18" rx="4" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+      <text x="56" y="195" fill="#94A3B8" font-size="13.5" font-weight="500">Patches</text>
+    </g>
+    <!-- Deployments -->
+    <g opacity="0.55">
+      <rect x="12" y="214" width="196" height="40" rx="6" fill="transparent"/>
+      <rect x="28" y="225" width="18" height="18" rx="4" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+      <text x="56" y="239" fill="#94A3B8" font-size="13.5" font-weight="500">Deployments</text>
+    </g>
+    <!-- Reports -->
+    <g opacity="0.55">
+      <rect x="12" y="258" width="196" height="40" rx="6" fill="transparent"/>
+      <rect x="28" y="269" width="18" height="18" rx="4" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+      <text x="56" y="283" fill="#94A3B8" font-size="13.5" font-weight="500">Reports</text>
+    </g>
+    <!-- Settings -->
+    <g opacity="0.55">
+      <rect x="12" y="302" width="196" height="40" rx="6" fill="transparent"/>
+      <rect x="28" y="313" width="18" height="18" rx="4" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+      <text x="56" y="327" fill="#94A3B8" font-size="13.5" font-weight="500">Settings</text>
+    </g>
+
+    <!-- User avatar at bottom of sidebar -->
+    <g transform="translate(20, 552)">
+      <circle cx="16" cy="16" r="16" fill="#334155"/>
+      <text x="16" y="21" fill="#CBD5E1" font-size="12" font-weight="600" text-anchor="middle">JD</text>
+      <text x="42" y="14" fill="#E2E8F0" font-size="12" font-weight="500">John Doe</text>
+      <text x="42" y="28" fill="#64748B" font-size="10">Administrator</text>
+    </g>
+
+    <!-- Main Content Area -->
+    <!-- Header -->
+    <text x="248" y="46" fill="#F1F5F9" font-size="22" font-weight="700">Endpoints</text>
+    <text x="248" y="64" fill="#64748B" font-size="12">Monitor and manage all connected endpoints</text>
+
+    <!-- Search bar -->
+    <rect x="680" y="24" width="252" height="36" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <text x="700" y="47" fill="#475569" font-size="12">Search endpoints...</text>
+    <!-- Search icon -->
+    <circle cx="912" cy="42" r="7" fill="none" stroke="#475569" stroke-width="1.5"/>
+    <line x1="917" y1="47" x2="921" y2="51" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Stats Cards -->
+    <!-- Total -->
+    <rect x="248" y="82" width="168" height="88" rx="10" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <text x="268" y="108" fill="#94A3B8" font-size="11" font-weight="500" text-transform="uppercase" letter-spacing="0.5">TOTAL ENDPOINTS</text>
+    <text x="268" y="144" fill="#F1F5F9" font-size="32" font-weight="700">245</text>
+    <text x="348" y="144" fill="#64748B" font-size="12">devices</text>
+
+    <!-- Online -->
+    <rect x="428" y="82" width="168" height="88" rx="10" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <circle cx="268" cy="102" r="4" fill="#22C55E" transform="translate(180,0)"/>
+    <text x="458" y="108" fill="#94A3B8" font-size="11" font-weight="500">ONLINE</text>
+    <text x="448" y="144" fill="#22C55E" font-size="32" font-weight="700">230</text>
+    <text x="528" y="144" fill="#64748B" font-size="12">93.9%</text>
+
+    <!-- Offline -->
+    <rect x="608" y="82" width="168" height="88" rx="10" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <circle cx="628" cy="102" r="4" fill="#EF4444"/>
+    <text x="638" y="108" fill="#94A3B8" font-size="11" font-weight="500">OFFLINE</text>
+    <text x="628" y="144" fill="#EF4444" font-size="32" font-weight="700">15</text>
+    <text x="670" y="144" fill="#64748B" font-size="12">6.1%</text>
+
+    <!-- Critical -->
+    <rect x="788" y="82" width="144" height="88" rx="10" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <circle cx="808" cy="102" r="4" fill="#F59E0B"/>
+    <text x="818" y="108" fill="#94A3B8" font-size="11" font-weight="500">CRITICAL</text>
+    <text x="808" y="144" fill="#F59E0B" font-size="32" font-weight="700">3</text>
+    <text x="836" y="144" fill="#64748B" font-size="12">alerts</text>
+
+    <!-- Table -->
+    <rect x="248" y="186" width="684" height="400" rx="10" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <!-- Table Header -->
+    <rect x="248" y="186" width="684" height="42" rx="10" fill="#0F172A"/>
+    <rect x="248" y="218" width="684" height="10" fill="#0F172A"/>
+    <line x1="248" y1="228" x2="932" y2="228" stroke="#334155" stroke-width="1"/>
+    <text x="274" y="212" fill="#64748B" font-size="11" font-weight="600" letter-spacing="0.5">HOSTNAME</text>
+    <text x="430" y="212" fill="#64748B" font-size="11" font-weight="600" letter-spacing="0.5">IP ADDRESS</text>
+    <text x="572" y="212" fill="#64748B" font-size="11" font-weight="600" letter-spacing="0.5">OS</text>
+    <text x="700" y="212" fill="#64748B" font-size="11" font-weight="600" letter-spacing="0.5">STATUS</text>
+    <text x="820" y="212" fill="#64748B" font-size="11" font-weight="600" letter-spacing="0.5">LAST SEEN</text>
+
+    <!-- Row 1 -->
+    <rect x="258" y="236" width="12" height="12" rx="3" fill="#3B82F6" opacity="0.15"/>
+    <text x="274" y="256" fill="#E2E8F0" font-size="13" font-weight="500">PROD-WEB-01</text>
+    <text x="430" y="256" fill="#94A3B8" font-size="13">10.0.1.101</text>
+    <text x="572" y="256" fill="#94A3B8" font-size="13">Windows Server 2022</text>
+    <rect x="700" y="243" width="60" height="22" rx="11" fill="#052E16"/>
+    <text x="730" y="258" fill="#22C55E" font-size="11" font-weight="600" text-anchor="middle">Online</text>
+    <text x="820" y="256" fill="#64748B" font-size="12">2 min ago</text>
+    <line x1="268" y1="272" x2="922" y2="272" stroke="#1E293B" stroke-width="1"/>
+
+    <!-- Row 2 -->
+    <text x="274" y="294" fill="#E2E8F0" font-size="13" font-weight="500">PROD-DB-01</text>
+    <text x="430" y="294" fill="#94A3B8" font-size="13">10.0.1.102</text>
+    <text x="572" y="294" fill="#94A3B8" font-size="13">Ubuntu 22.04 LTS</text>
+    <rect x="700" y="281" width="60" height="22" rx="11" fill="#052E16"/>
+    <text x="730" y="296" fill="#22C55E" font-size="11" font-weight="600" text-anchor="middle">Online</text>
+    <text x="820" y="294" fill="#64748B" font-size="12">1 min ago</text>
+    <line x1="268" y1="310" x2="922" y2="310" stroke="#1E293B" stroke-width="1"/>
+
+    <!-- Row 3 -->
+    <text x="274" y="332" fill="#E2E8F0" font-size="13" font-weight="500">PROD-API-03</text>
+    <text x="430" y="332" fill="#94A3B8" font-size="13">10.0.2.45</text>
+    <text x="572" y="332" fill="#94A3B8" font-size="13">RHEL 9.1</text>
+    <rect x="700" y="319" width="68" height="22" rx="11" fill="#422006"/>
+    <text x="734" y="334" fill="#F59E0B" font-size="11" font-weight="600" text-anchor="middle">Warning</text>
+    <text x="820" y="332" fill="#64748B" font-size="12">15 min ago</text>
+    <line x1="268" y1="348" x2="922" y2="348" stroke="#1E293B" stroke-width="1"/>
+
+    <!-- Row 4 -->
+    <text x="274" y="370" fill="#E2E8F0" font-size="13" font-weight="500">STG-WEB-02</text>
+    <text x="430" y="370" fill="#94A3B8" font-size="13">10.0.3.201</text>
+    <text x="572" y="370" fill="#94A3B8" font-size="13">Windows Server 2019</text>
+    <rect x="700" y="357" width="60" height="22" rx="11" fill="#052E16"/>
+    <text x="730" y="372" fill="#22C55E" font-size="11" font-weight="600" text-anchor="middle">Online</text>
+    <text x="820" y="370" fill="#64748B" font-size="12">Just now</text>
+    <line x1="268" y1="386" x2="922" y2="386" stroke="#1E293B" stroke-width="1"/>
+
+    <!-- Row 5 -->
+    <text x="274" y="408" fill="#E2E8F0" font-size="13" font-weight="500">DEV-BUILD-01</text>
+    <text x="430" y="408" fill="#94A3B8" font-size="13">10.0.4.55</text>
+    <text x="572" y="408" fill="#94A3B8" font-size="13">Ubuntu 24.04 LTS</text>
+    <rect x="700" y="395" width="60" height="22" rx="11" fill="#450A0A"/>
+    <text x="730" y="410" fill="#EF4444" font-size="11" font-weight="600" text-anchor="middle">Offline</text>
+    <text x="820" y="408" fill="#64748B" font-size="12">3 hrs ago</text>
+    <line x1="268" y1="424" x2="922" y2="424" stroke="#1E293B" stroke-width="1"/>
+
+    <!-- Row 6 -->
+    <text x="274" y="446" fill="#E2E8F0" font-size="13" font-weight="500">PROD-CACHE-01</text>
+    <text x="430" y="446" fill="#94A3B8" font-size="13">10.0.1.200</text>
+    <text x="572" y="446" fill="#94A3B8" font-size="13">Debian 12</text>
+    <rect x="700" y="433" width="60" height="22" rx="11" fill="#052E16"/>
+    <text x="730" y="448" fill="#22C55E" font-size="11" font-weight="600" text-anchor="middle">Online</text>
+    <text x="820" y="446" fill="#64748B" font-size="12">30 sec ago</text>
+
+    <!-- Pagination -->
+    <text x="274" y="572" fill="#64748B" font-size="11">Showing 1-6 of 245 endpoints</text>
+    <g transform="translate(830, 556)">
+      <rect width="30" height="26" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="15" y="18" fill="#94A3B8" font-size="11" text-anchor="middle">&lt;</text>
+      <rect x="36" width="30" height="26" rx="6" fill="#3B82F6"/>
+      <text x="51" y="18" fill="#fff" font-size="11" font-weight="600" text-anchor="middle">1</text>
+      <rect x="72" width="30" height="26" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="87" y="18" fill="#94A3B8" font-size="11" text-anchor="middle">2</text>
+      <rect x="108" width="30" height="26" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="123" y="18" fill="#94A3B8" font-size="11" text-anchor="middle">&gt;</text>
+    </g>
+  </g>
+</svg>

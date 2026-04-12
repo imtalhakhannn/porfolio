@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talha Khan | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">TK</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle light mode">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="TALHA KHAN (CV) .pdf" download class="btn btn-nav-cv">
+                    <i class="fas fa-download"></i> Resume
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-grid-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span> Software Developer | 3+ Years Experience
+            </div>
+            <h1 class="hero-name">
+                <span class="line line-1">Hi, I'm <span class="highlight">Talha</span></span>
+                <span class="line line-2">Full Stack</span>
+                <span class="line line-3"><span class="stroke-text">Developer</span></span>
+            </h1>
+            <div class="hero-roles">
+                <span class="role-label">I specialize in</span>
+                <span class="role-text" id="roleText"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-desc">I build enterprise-grade web apps, mobile platforms, and automation tools that power real businesses. 3+ years turning complex ideas into polished products.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>Explore My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-glass">
+                    <span>Let's Talk</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Years<br>Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="6">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Major<br>Products</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Technologies<br>Mastered</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01 / About</span>
+                <h2 class="section-title">Building Digital<br><span class="highlight">Experiences</span> That Matter</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-lead">I'm a Full Stack Developer who loves building products that solve real problems.</p>
+                    <p>With 3+ years of hands-on experience, I've delivered enterprise platforms across IT service management, health & safety compliance, network automation, field operations, and AI-powered education. From architecting backends to crafting pixel-perfect UIs, I own the full stack.</p>
+                    <p>I specialize in payment integrations, responsive Webflow sites, and building both web portals and mobile apps that serve thousands of users daily.</p>
+                </div>
+                <div class="about-cards">
+                    <div class="about-card" data-tilt>
+                        <div class="card-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Full Stack Dev</h3>
+                        <p>Backend APIs to polished frontend interfaces</p>
+                    </div>
+                    <div class="about-card" data-tilt>
+                        <div class="card-icon"><i class="fas fa-mobile-screen-button"></i></div>
+                        <h3>Mobile & Web</h3>
+                        <p>Cross-platform apps & responsive websites</p>
+                    </div>
+                    <div class="about-card" data-tilt>
+                        <div class="card-icon"><i class="fas fa-credit-card"></i></div>
+                        <h3>Payments</h3>
+                        <p>Secure payment gateway integrations</p>
+                    </div>
+                    <div class="about-card" data-tilt>
+                        <div class="card-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <h3>Webflow</h3>
+                        <p>Custom sites & CMS-driven solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02 / Skills</span>
+                <h2 class="section-title">My <span class="highlight">Tech Stack</span></h2>
+            </div>
+            <div class="skills-marquee">
+                <div class="marquee-track">
+                    <div class="marquee-content">
+                        <span class="marquee-item">React.js</span>
+                        <span class="marquee-dot"></span>
+                        <span class="marquee-item">Python</span>
+                        <span class="marquee-dot"></span>
+                        <span class="marquee-item">Java</span>
+                        <span class="marquee-dot"></span>
+                        <span class="marquee-item">JavaScript</span>
+                        <span class="marquee-dot"></span>
+                        <span class="marquee-item">TypeScript</span>
+                        <span class="marquee-dot"></span>
+                        <span class="marquee-item">Django</span>
+                        <span class="marquee-dot"></span>
+                        <span class="marquee-item">Node.js</span>
+                        <span class="marquee-dot"></span>
+                        <span class="marquee-item">PostgreSQL</span>
+                        <span class="marquee-dot"></span>
+                        <span class="marquee-item">React.js</span>
+                        <span class="marquee-dot"></span>
+                        <span class="marquee-item">Python</span>
+                        <span class="marquee-dot"></span>
+                        <span class="marquee-item">Java</span>
+                        <span class="marquee-dot"></span>
+                        <span class="marquee-item">JavaScript</span>
+                        <span class="marquee-dot"></span>
+                        <span class="marquee-item">TypeScript</span>
+                        <span class="marquee-dot"></span>
+                        <span class="marquee-item">Django</span>
+                        <span class="marquee-dot"></span>
+                        <span class="marquee-item">Node.js</span>
+                        <span class="marquee-dot"></span>
+                        <span class="marquee-item">PostgreSQL</span>
+                        <span class="marquee-dot"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span>React.js</span>
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                        <span>HTML5 / CSS3</span>
+                        <span>Tailwind CSS</span>
+                        <span>SCSS</span>
+                        <span>Webflow</span>
+                        <span>Responsive Design</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>Node.js</span>
+                        <span>Django</span>
+                        <span>FastAPI</span>
+                        <span>REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Database & DevOps</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span>PostgreSQL</span>
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                        <span>Git</span>
+                        <span>Docker</span>
+                        <span>Linux</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Specialties</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span>Payment Integration</span>
+                        <span>Mobile App Dev</span>
+                        <span>AI/ML Integration</span>
+                        <span>Network Automation</span>
+                        <span>Agile / Scrum</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03 / Portfolio</span>
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <p class="section-subtitle">A selection of products I've built and shipped</p>
+            </div>
+
+            <!-- SupportX -->
+            <div class="project-showcase">
+                <div class="project-info">
+                    <span class="project-number">01</span>
+                    <h3 class="project-name">SupportX</h3>
+                    <p class="project-tagline">IT Service Management & Ticketing System</p>
+                    <p class="project-description">A comprehensive ITSM platform with incident management, SLA tracking, change management, workflow automation builder, CMDB, knowledge base, and an AI-powered support assistant. Handles enterprise-scale ticket volumes with real-time dashboards.</p>
+                    <div class="project-tech">
+                        <span>React.js</span><span>Python</span><span>PostgreSQL</span><span>REST API</span><span>AI Integration</span>
+                    </div>
+                </div>
+                <div class="project-images">
+                    <div class="project-gallery">
+                        <div class="gallery-item" onclick="openLightbox(this)">
+                            <img src="assets/projects/supportx-dashboard.png" alt="SupportX Dashboard" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Dashboard</span></div>
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox(this)">
+                            <img src="assets/projects/supportx-incidents.png" alt="SupportX Incidents" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Incidents</span></div>
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox(this)">
+                            <img src="assets/projects/supportx-calendar.png" alt="SupportX Calendar" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Change Calendar</span></div>
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox(this)">
+                            <img src="assets/projects/supportx-workflows.png" alt="SupportX Workflows" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Workflow Builder</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HSEQ -->
+            <div class="project-showcase reverse">
+                <div class="project-info">
+                    <span class="project-number">02</span>
+                    <h3 class="project-name">HSEQ</h3>
+                    <p class="project-tagline">Health, Safety, Environment & Quality</p>
+                    <p class="project-description">Enterprise HSE management covering incident tracking, audit management, compliance monitoring, training/induction, NCR tracking, carbon emissions, and weather mapping. Built as both a web portal and mobile app for field teams.</p>
+                    <div class="project-tech">
+                        <span>React.js</span><span>Python</span><span>React Native</span><span>REST API</span><span>Analytics</span>
+                    </div>
+                </div>
+                <div class="project-images">
+                    <div class="project-gallery">
+                        <div class="gallery-item" onclick="openLightbox(this)">
+                            <img src="assets/projects/hseq-dashboard.png" alt="HSEQ Dashboard" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Web Dashboard</span></div>
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox(this)">
+                            <img src="assets/projects/hseq-analytics.png" alt="HSEQ Analytics" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Analytics</span></div>
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox(this)">
+                            <img src="assets/projects/hseq-tasks.png" alt="HSEQ Tasks" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Task Management</span></div>
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox(this)">
+                            <img src="assets/projects/hseq-compliance.png" alt="HSEQ Compliance" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Compliance</span></div>
+                        </div>
+                    </div>
+                    <!-- Mobile App Screenshots -->
+                    <div class="mobile-app-label"><i class="fas fa-mobile-screen-button"></i> Mobile App</div>
+                    <div class="mobile-gallery">
+                        <div class="mobile-frame" onclick="openLightbox(this)">
+                            <img src="assets/projects/hseq-mobile-dashboard.svg" alt="HSEQ Mobile Dashboard" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Mobile Dashboard</span></div>
+                        </div>
+                        <div class="mobile-frame" onclick="openLightbox(this)">
+                            <img src="assets/projects/hseq-mobile-incidents.svg" alt="HSEQ Mobile Incidents" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Mobile Incidents</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MonetX -->
+            <div class="project-showcase">
+                <div class="project-info">
+                    <span class="project-number">03</span>
+                    <h3 class="project-name">MonetX</h3>
+                    <p class="project-tagline">Network Automation & Device Management</p>
+                    <p class="project-description">Network automation tool for managing infrastructure at scale. Patch management, endpoint monitoring, deployment automation, and security reporting with a modern interface rivaling enterprise tools like Zabbix.</p>
+                    <div class="project-tech">
+                        <span>React.js</span><span>Python</span><span>Network APIs</span><span>Linux</span><span>Automation</span>
+                    </div>
+                </div>
+                <div class="project-images">
+                    <div class="project-gallery">
+                        <div class="gallery-item" onclick="openLightbox(this)">
+                            <img src="assets/projects/monetx-patches.png" alt="MonetX Patches" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Patch Management</span></div>
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox(this)">
+                            <img src="assets/projects/monetx-endpoints.svg" alt="MonetX Endpoints" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Endpoint Monitoring</span></div>
+                        </div>
+                        <div class="gallery-item gallery-item-span" onclick="openLightbox(this)">
+                            <img src="assets/projects/monetx-deployments.svg" alt="MonetX Deployments" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Deployments</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nets MapX -->
+            <div class="project-showcase reverse">
+                <div class="project-info">
+                    <span class="project-number">04</span>
+                    <h3 class="project-name">Nets MapX</h3>
+                    <p class="project-tagline">GIS Automation, Field Ops & Blockage Reporting</p>
+                    <p class="project-description">A comprehensive GIS automation and field operations platform. Features project management, attendance tracking, scope assignment, and an A55 blockage reporting mobile app with satellite mapping, image uploads, and real-time submission history. Built as both a web dashboard and mobile app for field engineers.</p>
+                    <div class="project-tech">
+                        <span>React.js</span><span>Python</span><span>React Native</span><span>GeoJSON</span><span>GIS</span><span>REST API</span>
+                    </div>
+                </div>
+                <div class="project-images">
+                    <div class="project-gallery">
+                        <div class="gallery-item" onclick="openLightbox(this)">
+                            <img src="assets/projects/netsmapx-dashboard.jpg" alt="Nets MapX Dashboard" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Web Dashboard</span></div>
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox(this)">
+                            <img src="assets/projects/netsmapx-scope.jpg" alt="Nets MapX Scope" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Scope Assignment</span></div>
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox(this)">
+                            <img src="assets/projects/netsmapx-web-dashboard.png" alt="Nets MapX Analytics" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Analytics Dashboard</span></div>
+                        </div>
+                    </div>
+                    <!-- Mobile App Screenshots -->
+                    <div class="mobile-app-label"><i class="fas fa-mobile-screen-button"></i> Blockage Reporting App</div>
+                    <div class="mobile-gallery">
+                        <div class="mobile-frame" onclick="openLightbox(this)">
+                            <img src="assets/projects/netsmapx-gis-menu.png" alt="MapX GIS Menu" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>GIS Automation</span></div>
+                        </div>
+                        <div class="mobile-frame" onclick="openLightbox(this)">
+                            <img src="assets/projects/netsmapx-blockage-form.png" alt="MapX Blockage Form" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Blockage Form</span></div>
+                        </div>
+                        <div class="mobile-frame" onclick="openLightbox(this)">
+                            <img src="assets/projects/netsmapx-satellite.png" alt="MapX Satellite View" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Satellite View</span></div>
+                        </div>
+                        <div class="mobile-frame" onclick="openLightbox(this)">
+                            <img src="assets/projects/netsmapx-history.png" alt="MapX History" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Submission History</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Little Author -->
+            <div class="project-showcase">
+                <div class="project-info">
+                    <span class="project-number">05</span>
+                    <h3 class="project-name">Little Author</h3>
+                    <p class="project-tagline">AI-Powered Children's Storybook Creator</p>
+                    <p class="project-description">An innovative AI-driven educational platform where children can create personalized storybooks. Leverages DALL-E for custom character illustration, OpenAI for story generation, and provides an interactive reading experience with progress tracking and a personal library of authored stories.</p>
+                    <div class="project-tech">
+                        <span>React.js</span><span>Java</span><span>Spring Boot</span><span>OpenAI API</span><span>DALL-E</span>
+                    </div>
+                </div>
+                <div class="project-images">
+                    <div class="project-gallery">
+                        <div class="gallery-item" onclick="openLightbox(this)">
+                            <img src="assets/projects/little-author-dashboard.svg" alt="Little Author Dashboard" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Dashboard</span></div>
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox(this)">
+                            <img src="assets/projects/little-author-create.svg" alt="Little Author Story Creator" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Story Creator</span></div>
+                        </div>
+                    </div>
+                    <!-- Mobile App -->
+                    <div class="mobile-app-label"><i class="fas fa-mobile-screen-button"></i> Mobile App</div>
+                    <div class="mobile-gallery">
+                        <div class="mobile-frame" onclick="openLightbox(this)">
+                            <img src="assets/projects/little-author-mobile.svg" alt="Little Author Mobile" loading="lazy">
+                            <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Mobile Library</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">04 / Testimonials</span>
+                <h2 class="section-title">What Clients <span class="highlight">Say</span></h2>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
+                <blockquote class="testimonial-text">
+                    "Talha has consistently demonstrated exceptional performance across all dimensions of his role. He delivers high-quality work ahead of deadlines, with outputs that are reliable, well-structured, and enriched by his own innovative idea. His communication is prompt and effective, and he remains available to support even outside working hours when needed. His punctuality and dependability are exemplary, and his ownership, reliability, and problem-solving skills make him a strong leader who inspires confidence in the team."
+                </blockquote>
+                <div class="testimonial-author">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-info">
+                        <h4>Mian Waqas</h4>
+                        <p>Regional Head of HSEQ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">05 / Contact</span>
+                <h2 class="section-title">Let's Build Something<br><span class="highlight">Amazing Together</span></h2>
+                <p class="section-subtitle">Have a project in mind? Let's discuss how I can help bring your vision to life.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-cards">
+                    <a href="tel:03099776038" class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+                        <h4>Phone</h4>
+                        <p>0309-9776038</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/talha-khan-04b05a233/" target="_blank" class="contact-card">
+                        <div class="contact-card-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+                        <h4>LinkedIn</h4>
+                        <p>Connect with me</p>
+                    </a>
+                    <a href="TALHA KHAN (CV) .pdf" download class="contact-card">
+                        <div class="contact-card-icon cv"><i class="fas fa-file-pdf"></i></div>
+                        <h4>Resume</h4>
+                        <p>Download my CV</p>
+                    </a>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder=" ">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder=" " rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">TK</span>
+            </a>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/talha-khan-04b05a233/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="tel:03099776038" aria-label="Phone"><i class="fas fa-phone"></i></a>
+            </div>
+            <p>&copy; 2026 Talha Khan. Crafted with precision.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <button class="lightbox-prev" onclick="navigateLightbox(-1)"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next" onclick="navigateLightbox(1)"><i class="fas fa-chevron-right"></i></button>
+        <img id="lightboxImg" src="" alt="">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

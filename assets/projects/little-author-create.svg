@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600">
+  <defs>
+    <filter id="shadow1" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <filter id="shadow2" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+    <linearGradient id="previewGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#DDD6FE"/>
+      <stop offset="30%" stop-color="#FBCFE8"/>
+      <stop offset="60%" stop-color="#FDE68A"/>
+      <stop offset="100%" stop-color="#A7F3D0"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <clipPath id="previewClip">
+      <rect x="370" y="120" width="556" height="250" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="600" fill="#F5F3FF" rx="12"/>
+
+  <!-- Header -->
+  <rect x="24" y="16" width="912" height="64" rx="18" fill="#fff" filter="url(#shadow1)"/>
+  <!-- Back arrow -->
+  <circle cx="56" cy="48" r="18" fill="#F5F3FF"/>
+  <path d="M62,48 L52,48 M52,48 L57,43 M52,48 L57,53" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Magic wand icon -->
+  <line x1="88" y1="38" x2="100" y2="54" stroke="url(#headerGrad)" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="86" cy="36" r="3" fill="#F59E0B"/>
+  <line x1="84" y1="30" x2="84" y2="26" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="78" y1="34" x2="75" y2="32" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="80" y1="28" x2="78" y2="25" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="92" y1="30" x2="94" y2="27" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+
+  <text x="112" y="54" fill="#4C1D95" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Create Your Story</text>
+
+  <!-- Save button -->
+  <rect x="820" y="30" width="100" height="36" rx="12" fill="url(#btnGrad)"/>
+  <text x="870" y="54" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Save Draft</text>
+
+  <!-- LEFT PANEL: Story Settings -->
+  <rect x="24" y="92" width="330" height="488" rx="20" fill="#fff" filter="url(#shadow2)"/>
+  <text x="48" y="124" fill="#4C1D95" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Story Settings</text>
+
+  <!-- Title Input -->
+  <text x="48" y="156" fill="#6B7280" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">TITLE</text>
+  <rect x="48" y="164" width="282" height="42" rx="12" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="64" y="190" fill="#1F2937" font-family="system-ui, sans-serif" font-size="14">The Dragon's Garden</text>
+  <!-- Pencil icon -->
+  <line x1="310" y1="180" x2="316" y2="174" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
+  <rect x="307" y="178" width="6" height="10" rx="1" fill="none" stroke="#9CA3AF" stroke-width="1.5" transform="rotate(-45 310 183)"/>
+
+  <!-- Genre Dropdown -->
+  <text x="48" y="230" fill="#6B7280" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">GENRE</text>
+  <rect x="48" y="238" width="282" height="42" rx="12" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="64" y="264" fill="#1F2937" font-family="system-ui, sans-serif" font-size="14">Fantasy</text>
+  <!-- Chevron down -->
+  <path d="M316,256 L322,264 L328,256" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Genre tag -->
+  <rect x="280" y="248" width="20" height="20" rx="6" fill="#EDE9FE"/>
+  <text x="290" y="262" text-anchor="middle" fill="#8B5CF6" font-family="system-ui, sans-serif" font-size="12">🐉</text>
+
+  <!-- Age Group -->
+  <text x="48" y="304" fill="#6B7280" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">AGE GROUP</text>
+  <rect x="48" y="312" width="88" height="36" rx="10" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="92" y="334" text-anchor="middle" fill="#7C3AED" font-family="system-ui, sans-serif" font-size="12" font-weight="600">5-8 years</text>
+  <rect x="146" y="312" width="88" height="36" rx="10" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="190" y="334" text-anchor="middle" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="12">9-12 years</text>
+  <rect x="244" y="312" width="86" height="36" rx="10" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="287" y="334" text-anchor="middle" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="12">3-5 years</text>
+
+  <!-- Characters Section -->
+  <text x="48" y="380" fill="#6B7280" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">CHARACTERS</text>
+
+  <!-- Character 1 -->
+  <rect x="48" y="392" width="132" height="56" rx="14" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1"/>
+  <circle cx="76" cy="420" r="16" fill="#F59E0B"/>
+  <circle cx="76" cy="415" r="5" fill="#FEF3C7"/>
+  <path d="M68,428 Q76,423 84,428" fill="#FEF3C7"/>
+  <text x="98" y="416" fill="#92400E" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Luna</text>
+  <text x="98" y="430" fill="#D97706" font-family="system-ui, sans-serif" font-size="9">Dragon</text>
+
+  <!-- Character 2 -->
+  <rect x="190" y="392" width="132" height="56" rx="14" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1"/>
+  <circle cx="218" cy="420" r="16" fill="#34D399"/>
+  <circle cx="218" cy="415" r="5" fill="#ECFDF5"/>
+  <path d="M210,428 Q218,423 226,428" fill="#ECFDF5"/>
+  <text x="240" y="416" fill="#065F46" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Finn</text>
+  <text x="240" y="430" fill="#059669" font-family="system-ui, sans-serif" font-size="9">Gardener</text>
+
+  <!-- Add Character button -->
+  <rect x="48" y="462" width="282" height="38" rx="12" fill="#F5F3FF" stroke="#DDD6FE" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <text x="189" y="486" text-anchor="middle" fill="#8B5CF6" font-family="system-ui, sans-serif" font-size="13" font-weight="500">+ Add Character</text>
+
+  <!-- AI Tone -->
+  <text x="48" y="528" fill="#6B7280" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">AI WRITING TONE</text>
+  <rect x="48" y="536" width="70" height="28" rx="8" fill="#8B5CF6"/>
+  <text x="83" y="554" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Playful</text>
+  <rect x="126" y="536" width="82" height="28" rx="8" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="167" y="554" text-anchor="middle" fill="#6B7280" font-family="system-ui, sans-serif" font-size="10">Educational</text>
+  <rect x="216" y="536" width="76" height="28" rx="8" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="254" y="554" text-anchor="middle" fill="#6B7280" font-family="system-ui, sans-serif" font-size="10">Dreamy</text>
+
+  <!-- RIGHT PANEL: Story Preview -->
+  <rect x="370" y="92" width="566" height="488" rx="20" fill="#fff" filter="url(#shadow2)"/>
+
+  <!-- Preview header -->
+  <text x="394" y="122" fill="#4C1D95" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Story Preview</text>
+  <rect x="858" y="104" width="60" height="26" rx="8" fill="#FEF3C7"/>
+  <text x="888" y="122" text-anchor="middle" fill="#D97706" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Page 2</text>
+
+  <!-- Illustration Placeholder -->
+  <rect x="394" y="136" width="518" height="220" rx="16" fill="url(#previewGrad)"/>
+
+  <!-- Whimsical scene inside illustration -->
+  <!-- Garden elements -->
+  <circle cx="500" cy="300" r="40" fill="#34D399" opacity="0.4"/>
+  <circle cx="600" cy="290" r="50" fill="#10B981" opacity="0.35"/>
+  <circle cx="720" cy="300" r="35" fill="#34D399" opacity="0.4"/>
+  <!-- Flowers -->
+  <circle cx="480" cy="270" r="6" fill="#EC4899" opacity="0.6"/>
+  <circle cx="530" cy="260" r="5" fill="#F59E0B" opacity="0.6"/>
+  <circle cx="680" cy="265" r="7" fill="#8B5CF6" opacity="0.5"/>
+  <circle cx="750" cy="275" r="5" fill="#EC4899" opacity="0.6"/>
+  <!-- Dragon silhouette -->
+  <ellipse cx="640" cy="220" rx="35" ry="22" fill="#F59E0B" opacity="0.35"/>
+  <ellipse cx="660" cy="210" rx="14" ry="10" fill="#F59E0B" opacity="0.35"/>
+  <path d="M620,210 L615,195 L625,205" fill="#F59E0B" opacity="0.3"/>
+  <path d="M630,205 L628,190 L635,202" fill="#F59E0B" opacity="0.3"/>
+  <!-- Sun -->
+  <circle cx="800" cy="170" r="20" fill="#FDE68A" opacity="0.6"/>
+
+  <!-- AI Sparkle badge on illustration -->
+  <rect x="860" y="148" width="40" height="24" rx="8" fill="rgba(139,92,246,0.85)"/>
+  <text x="880" y="164" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="9" font-weight="700">AI</text>
+  <!-- Sparkle dots -->
+  <circle cx="868" cy="154" r="1.5" fill="#FDE68A"/>
+  <circle cx="892" cy="158" r="1" fill="#FDE68A"/>
+  <circle cx="873" cy="166" r="1" fill="#FDE68A"/>
+
+  <!-- Story text -->
+  <text x="394" y="384" fill="#374151" font-family="Georgia, serif" font-size="14" font-style="italic" letter-spacing="0.3">
+    <tspan x="394" dy="0">Luna the little dragon tiptoed through the garden gate,</tspan>
+    <tspan x="394" dy="22">her golden scales shimmering in the morning sun. "Oh my!"</tspan>
+    <tspan x="394" dy="22">she gasped, as a field of rainbow flowers stretched before</tspan>
+    <tspan x="394" dy="22">her, each one humming a tiny, magical tune.</tspan>
+  </text>
+
+  <text x="394" y="472" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="10">Generated by AI  |  Last edited 2 minutes ago</text>
+
+  <!-- Buttons -->
+  <rect x="394" y="490" width="190" height="44" rx="14" fill="url(#btnGrad)" filter="url(#shadow1)"/>
+  <!-- Sparkle icon -->
+  <circle cx="422" cy="512" r="2" fill="#FDE68A"/>
+  <line x1="422" y1="506" x2="422" y2="518" stroke="#FDE68A" stroke-width="1" stroke-linecap="round"/>
+  <line x1="416" y1="512" x2="428" y2="512" stroke="#FDE68A" stroke-width="1" stroke-linecap="round"/>
+  <text x="500" y="517" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Generate Next Page</text>
+
+  <rect x="596" y="490" width="130" height="44" rx="14" fill="#fff" stroke="#8B5CF6" stroke-width="2"/>
+  <text x="661" y="517" text-anchor="middle" fill="#8B5CF6" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Edit Story</text>
+
+  <!-- Page indicator dots -->
+  <circle cx="610" cy="576" r="5" fill="#E5E7EB"/>
+  <circle cx="628" cy="576" r="5" fill="#8B5CF6"/>
+  <circle cx="646" cy="576" r="5" fill="#E5E7EB"/>
+  <circle cx="664" cy="576" r="5" fill="#E5E7EB"/>
+  <circle cx="682" cy="576" r="5" fill="#E5E7EB"/>
+  <!-- Page numbers -->
+  <text x="610" y="580" text-anchor="middle" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="7" font-weight="600">1</text>
+  <text x="628" y="580" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="7" font-weight="600">2</text>
+  <text x="646" y="580" text-anchor="middle" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="7" font-weight="600">3</text>
+  <text x="664" y="580" text-anchor="middle" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="7" font-weight="600">4</text>
+  <text x="682" y="580" text-anchor="middle" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="7" font-weight="600">5</text>
+</svg>
