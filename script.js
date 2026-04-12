@@ -309,17 +309,10 @@ if (cards.length > 1) {
     setInterval(() => slideTestimonial(1), 6000);
 }
 
-// ===== Contact Form =====
-document.getElementById('contactForm').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = e.target.querySelector('button');
-    btn.innerHTML = '<span>Message Sent!</span> <i class="fas fa-check"></i>';
-    btn.style.background = 'linear-gradient(135deg, #059669, #34D399)';
-    setTimeout(() => {
-        btn.innerHTML = '<span>Send Message</span> <i class="fas fa-paper-plane"></i>';
-        btn.style.background = '';
-        e.target.reset();
-    }, 3000);
+// ===== Contact Form - submit button animation =====
+document.getElementById('contactForm').addEventListener('submit', () => {
+    const btn = document.querySelector('#contactForm button[type="submit"]');
+    btn.innerHTML = '<span>Sending...</span> <i class="fas fa-spinner fa-spin"></i>';
 });
 
 // ===== Smooth Tilt Effect on About Cards =====

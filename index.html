@@ -563,21 +563,27 @@
                         <p>Download my CV</p>
                     </a>
                 </div>
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/tk99035@gmail.com" method="POST">
+                    <!-- FormSubmit config -->
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://imtalhakhannn.github.io/porfolio/thanks.html">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" name="_honey" style="display:none">
                     <div class="form-group">
-                        <input type="text" id="name" placeholder=" " required>
+                        <input type="text" name="name" id="name" placeholder=" " required>
                         <label for="name">Your Name</label>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" placeholder=" " required>
+                        <input type="email" name="email" id="email" placeholder=" " required>
                         <label for="email">Your Email</label>
                     </div>
                     <div class="form-group">
-                        <input type="text" id="subject" placeholder=" ">
+                        <input type="text" name="subject" id="subject" placeholder=" ">
                         <label for="subject">Subject</label>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" placeholder=" " rows="5" required></textarea>
+                        <textarea name="message" id="message" placeholder=" " rows="5" required></textarea>
                         <label for="message">Your Message</label>
                     </div>
                     <button type="submit" class="btn btn-primary btn-full">
