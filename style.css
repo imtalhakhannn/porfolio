@@ -938,6 +938,71 @@ a.project-overview-card:hover .poc-link {
     color: var(--primary);
 }
 
+/* Personal projects divider */
+.personal-projects-divider {
+    text-align: center;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.personal-projects-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--border);
+}
+
+.personal-projects-divider span {
+    position: relative;
+    background: var(--bg);
+    padding: 0 24px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.personal-projects-divider span i {
+    color: var(--primary-light);
+    margin-right: 8px;
+}
+
+[data-theme="light"] .personal-projects-divider span {
+    background: var(--bg);
+}
+
+.projects-overview.personal {
+    margin-bottom: 100px;
+}
+
+/* Project live link button */
+.project-live-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 10px 24px;
+    background: var(--gradient);
+    color: #fff;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all var(--transition);
+    box-shadow: 0 4px 15px var(--primary-glow);
+}
+
+.project-live-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px var(--primary-glow);
+    color: #fff;
+    gap: 12px;
+}
+
 /* ===== Projects ===== */
 .project-showcase {
     display: grid;
