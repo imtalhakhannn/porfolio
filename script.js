@@ -176,6 +176,14 @@ if (aboutCards) {
     observer.observe(aboutCards);
 }
 
+// Projects overview - stagger
+const projectsOverview = document.querySelector('.projects-overview');
+if (projectsOverview) {
+    projectsOverview.classList.add('stagger-children');
+    projectsOverview.querySelectorAll('.project-overview-card').forEach(el => el.classList.add('reveal-child'));
+    observer.observe(projectsOverview);
+}
+
 // About text
 document.querySelectorAll('.about-text').forEach(el => {
     el.classList.add('reveal-left');
